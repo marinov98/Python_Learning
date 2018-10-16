@@ -1,16 +1,29 @@
 def isEmpty(arr):
     if (len(arr) == 0):
-        return true
+        return True
     else:
-    return false
+        return False
 
 
 def mergSort(array):
     leftIndex = 0
     righIndex = 0
 
-    leftArray = array[:1/2]
-    rightArray = arrat[1/2:]
+    leftArray = array[:len(array) // 2]
+    rightArray = array[len(array) // 2:]
 
     for i in leftArray:
         for j in rightArray:
+            if ( i >= j):
+                array[righIndex] = rightArray[righIndex]
+                righIndex+=1
+            else:
+                array[leftIndex] = leftArray[leftIndex]
+                leftIndex+=1
+
+    return array
+
+
+
+arr = [1, 4, 5, 6, 7, 8, 9, 22, 11]
+mergSort(arr)
