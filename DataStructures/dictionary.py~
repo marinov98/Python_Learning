@@ -1,0 +1,15 @@
+students = {}
+students = {"Alice": 25,"Bob": 27,"Claire": 17, "Dan": 21, "Emma": 22}
+students["Fred"] = 25
+students["Fred"] # 25
+students.keys() # all first
+a = list(students.keys())
+list(students.values())[2:]
+# do not use an index no order
+students = {
+    "Alice": ["ID0001", 26]
+    "Bob": 27,
+    "Claire": 17,
+    "Dan": 21,
+    "Emma": 22
+}
