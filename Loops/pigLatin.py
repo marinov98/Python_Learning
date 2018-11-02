@@ -36,7 +36,7 @@ for word in words:
         new_word = the_rest + cons + "ay"
         new_words.append(new_word)
 
-output = " ".join(new_words)["happy", "birthday"] # -> "happy birthday"
+output = " ".join(new_words)# ["happy", "birthday"] #  "happy birthday"
 
 # output final string
 print(output)
