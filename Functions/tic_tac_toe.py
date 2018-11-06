@@ -37,7 +37,7 @@ def is_victory(icon):
        (board[1] == icon and board[4] == icon and board[7] == icon) or \
        (board[2] == icon and board[5] == icon and board[8] == icon) or \
        (board[0] == icon and board[4] == icon and board[8] == icon) or \
-       (board[2] == icon and board[4] == icon and board[6] == icon):       
+       (board[2] == icon and board[4] == icon and board[6] == icon):      
         return True
     else:
         return False
